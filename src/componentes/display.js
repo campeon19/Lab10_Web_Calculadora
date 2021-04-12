@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import './display.css';
+import "./display.css";
 
 class Display extends React.Component{
-    static PropTypes = {
+    static propTypes = {
         value: PropTypes.string,
     };
-    
+
     render(){
         return(
             <div className="component-display">
