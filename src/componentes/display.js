@@ -13,7 +13,7 @@ class Display extends React.Component{
             <div className="component-display">
                 <div>{this.props.value}</div>
             </div>
-        )
+        );
     }
 };
 
