@@ -10,7 +10,6 @@ class BotonDisplay extends React.Component{
     };
 
     handleClick = buttonName => {
-        console.log('botton display', buttonName);
         this.props.clickHandler(buttonName);
     }
 

@@ -12,7 +12,6 @@ class Boton extends React.Component {
   };
 
   handleClick = () => {
-    console.log(this.props.name);
     this.props.clickHandler(this.props.name);
   };
 
