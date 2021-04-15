@@ -3,7 +3,7 @@ import operate from "./operar";
 import isNumber from "./isNumber";
 
 export default function calculate(obj, buttonName) {
-  Big.DP = 8;
+  Big.DP = 7;
   console.log(buttonName);
   if (buttonName === "AC") {
     return {
@@ -20,7 +20,10 @@ export default function calculate(obj, buttonName) {
 
     if (obj.operacion) {
       if (obj.siguiente) {
-        return { siguiente: obj.siguiente + buttonName };   
+        if(obj.siguiente.length < 9){
+          return { siguiente: obj.siguiente + buttonName };
+        }
+        alert("Error numero maximo de digitos sobrepasado");   
       }
       return { siguiente: buttonName };
     }
