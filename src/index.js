@@ -18,6 +18,11 @@ class App extends React.Component{
         siguiente: null,
         operacion: null,
     }
+
+    handleClick = buttonName =>{
+        console.log('index', buttonName);
+        this.setState(calcular(this.state,buttonName));
+    }
     
     render(){
         return(
