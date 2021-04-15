@@ -15,39 +15,39 @@ class BotonDisplay extends React.Component{
     }
 
     render(){
-        return(
-            <div className="component-button-display">
-                <div>
-                    <Boton name="AC" clickHandler={this.handleClick}/>
-                    <Boton name="+/-" clickHandler={this.handleClick}/>
-                    <Boton name="%" clickHandler={this.handleClick}/>
-                    <Boton name="/" clickHandler={this.handleClick} blue/>
-                </div>
-                <div>
-                    <Boton name="7" clickHandler={this.handleClick}/>
-                    <Boton name="8" clickHandler={this.handleClick}/>
-                    <Boton name="9" clickHandler={this.handleClick}/>
-                    <Boton name="x" clickHandler={this.handleClick} blue/>
-                </div>
-                <div>
-                    <Boton name="4" clickHandler={this.handleClick}/>
-                    <Boton name="5" clickHandler={this.handleClick}/>
-                    <Boton name="6" clickHandler={this.handleClick}/>
-                    <Boton name="-" clickHandler={this.handleClick} blue/>
-                </div>
-                <div>
-                    <Boton name="1" clickHandler={this.handleClick}/>
-                    <Boton name="2" clickHandler={this.handleClick}/>
-                    <Boton name="3" clickHandler={this.handleClick}/>
-                    <Boton name="+" clickHandler={this.handleClick} blue/>
-                </div>
-                <div>
-                    <Boton name="0" clickHandler={this.handleClick} wide/>
-                    <Boton name="." clickHandler={this.handleClick}/>
-                    <Boton name="=" clickHandler={this.handleClick} blue/>
-                </div>
+        return (
+          <div className="component-button-display">
+            <div>
+              <Boton name="AC" clickHandler={this.handleClick} />
+              <Boton name="+/-" clickHandler={this.handleClick} />
+              <Boton name="%" clickHandler={this.handleClick} />
+              <Boton name="/" clickHandler={this.handleClick} blue />
             </div>
-        )
+            <div>
+              <Boton name="7" clickHandler={this.handleClick} />
+              <Boton name="8" clickHandler={this.handleClick} />
+              <Boton name="9" clickHandler={this.handleClick} />
+              <Boton name="x" clickHandler={this.handleClick} blue />
+            </div>
+            <div>
+              <Boton name="4" clickHandler={this.handleClick} />
+              <Boton name="5" clickHandler={this.handleClick} />
+              <Boton name="6" clickHandler={this.handleClick} />
+              <Boton name="-" clickHandler={this.handleClick} blue />
+            </div>
+            <div>
+              <Boton name="1" clickHandler={this.handleClick} />
+              <Boton name="2" clickHandler={this.handleClick} />
+              <Boton name="3" clickHandler={this.handleClick} />
+              <Boton name="+" clickHandler={this.handleClick} blue />
+            </div>
+            <div>
+              <Boton name="0" clickHandler={this.handleClick} wide />
+              <Boton name="." clickHandler={this.handleClick} />
+              <Boton name="=" clickHandler={this.handleClick} blue />
+            </div>
+          </div>
+        );
     }
 };
 

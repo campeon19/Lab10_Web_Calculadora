@@ -11,27 +11,27 @@ import BotonDisplay from './componentes/botonDisplay';
 import './index.css';
 import calcular from './componentes/util/calcular';
 
-class App extends React.Component{
+class App extends React.Component {
+  state = {
+    total: null,
+    siguiente: null,
+    operacion: null,
+  };
 
-    state = {
-        total: null,
-        siguiente: null,
-        operacion: null,
-    }
+  handleClick = (buttonName) => {
+    this.setState(calcular(this.state, buttonName));
+  };
 
-    handleClick = buttonName =>{
-        console.log('index', buttonName);
-        this.setState(calcular(this.state,buttonName));
-    }
-    
-    render(){
-        return(
-            <div className='component-app'>
-                <Display value={this.state.siguiente || this.state.total || 0}></Display>
-                <BotonDisplay clickHandler={this.handleClick}></BotonDisplay>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="component-app">
+        <Display
+          value={this.state.siguiente || this.state.total || 0}
+        ></Display>
+        <BotonDisplay clickHandler={this.handleClick}></BotonDisplay>
+      </div>
+    );
+  }
 }
 
 ReactDom.render(<App></App>, document.getElementById('root'));

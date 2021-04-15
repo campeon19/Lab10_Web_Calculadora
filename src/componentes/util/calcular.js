@@ -1,10 +1,10 @@
+/* eslint-disable no-alert */
 import Big from "big.js";
 import operate from "./operar";
 import isNumber from "./isNumber";
 
 export default function calculate(obj, buttonName) {
   Big.DP = 7;
-  console.log(buttonName);
   if (buttonName === "AC") {
     return {
       total: null,
@@ -72,22 +72,20 @@ export default function calculate(obj, buttonName) {
       if (obj.siguiente.includes(".")) {
         return {};
       }
-      return { siguiente: obj.siguiente + "." };
+      return { siguiente: `${obj.siguiente  }.` };
     }
     return { siguiente: "0." };
   }
 
   if (buttonName === "=") {
     if (obj.siguiente && obj.operacion) {
-      console.log(operate(obj.total, obj.siguiente, obj.operacion));
       return {
         total: operate(obj.total, obj.siguiente, obj.operacion),
         siguiente: null,
         operacion: null,
       };
-    } else {
+    } 
       return {};
-    }
   }
 
   if (buttonName === "+/-") {
