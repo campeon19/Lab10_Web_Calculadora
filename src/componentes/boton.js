@@ -24,7 +24,7 @@ class Boton extends React.Component {
 
     return (
       <div className={className.join(" ").trim()}>
-        <button onClick={this.handleClick}>{this.props.name}</button>
+        <button data-testid='buton' onClick={this.handleClick}>{this.props.name}</button>
       </div>
     );
   }
