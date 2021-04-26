@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import Display from './display';
 import BotonDisplay from './botonDisplay';
 import './App.css';
