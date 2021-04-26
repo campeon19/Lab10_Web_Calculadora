@@ -17,33 +17,33 @@ class BotonDisplay extends React.Component{
         return (
           <div className="component-button-display">
             <div>
-              <Boton name="AC" clickHandler={this.handleClick} />
-              <Boton name="+/-" clickHandler={this.handleClick} />
-              <Boton name="%" clickHandler={this.handleClick} />
-              <Boton name="/" clickHandler={this.handleClick} blue />
+              <Boton data-testid='boton_AC' name="AC" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_+/-' name="+/-" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_%' name="%" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_/' name="/" clickHandler={this.handleClick} blue />
             </div>
             <div>
-              <Boton name="7" clickHandler={this.handleClick} />
-              <Boton name="8" clickHandler={this.handleClick} />
-              <Boton name="9" clickHandler={this.handleClick} />
-              <Boton name="x" clickHandler={this.handleClick} blue />
+              <Boton data-testid='boton_7' name="7" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_8' name="8" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_9' name="9" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_x' name="x" clickHandler={this.handleClick} blue />
             </div>
             <div>
-              <Boton name="4" clickHandler={this.handleClick} />
-              <Boton name="5" clickHandler={this.handleClick} />
-              <Boton name="6" clickHandler={this.handleClick} />
-              <Boton name="-" clickHandler={this.handleClick} blue />
+              <Boton data-testid='boton_4' name="4" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_5' name="5" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_6' name="6" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_-' name="-" clickHandler={this.handleClick} blue />
             </div>
             <div>
-              <Boton name="1" clickHandler={this.handleClick} />
-              <Boton name="2" clickHandler={this.handleClick} />
-              <Boton name="3" clickHandler={this.handleClick} />
-              <Boton name="+" clickHandler={this.handleClick} blue />
+              <Boton data-testid='boton_1' name="1" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_2' name="2" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_3' name="3" clickHandler={this.handleClick} />
+              <Boton data-testid='boton_+' name="+" clickHandler={this.handleClick} blue />
             </div>
             <div>
-              <Boton name="0" clickHandler={this.handleClick} wide />
-              <Boton name="." clickHandler={this.handleClick} />
-              <Boton name="=" clickHandler={this.handleClick} blue />
+              <Boton data-testid='boton_0' name="0" clickHandler={this.handleClick} wide />
+              <Boton data-testid='boton_.' name="." clickHandler={this.handleClick} />
+              <Boton data-testid='boton_=' name="=" clickHandler={this.handleClick} blue />
             </div>
           </div>
         );

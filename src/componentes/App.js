@@ -1,15 +1,9 @@
-/*
-* autor: Christian Perez
-* Referencia: https://ahfarmer.github.io/calculator/
-*/
-
-
 import React from 'react';
 import ReactDom from 'react-dom';
-import Display from './componentes/display';
-import BotonDisplay from './componentes/botonDisplay';
-import './index.css';
-import calcular from './componentes/util/calcular';
+import Display from './display';
+import BotonDisplay from './botonDisplay';
+import './App.css';
+import calcular from './util/calcular';
 
 class App extends React.Component {
   state = {
@@ -34,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-ReactDom.render(<App></App>, document.getElementById('root'));
+export default App;
